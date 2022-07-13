@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        <img src={images.logo1} alt="" />
+        <img src={images.logo} alt="" />
       </div>
       <ul className='app__navbar-links'>
         {['about', 'skills', 'work', 'contact'].map((item) => (
@@ -30,7 +30,7 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-            {['about', 'skills', 'work', 'contact'].map((item) => (
+            {['home', 'about', 'skills', 'work', 'contact'].map((item) => (
               <li key={{item}}>
                 <a onClick={() => setToggle(false)} href={`#${item}`}>{item}</a>
               </li>

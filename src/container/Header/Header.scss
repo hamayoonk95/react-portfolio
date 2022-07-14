@@ -36,6 +36,7 @@
   }
   
   .app__header-info {
+    padding-bottom: 5rem;
     flex: 0.65;
     display: flex;
     flex-direction: column;
@@ -43,10 +44,6 @@
     align-items: flex-start;
     height: 100%;
   
-    @media screen and (max-width: 2000px) {
-      width: 100%;
-      margin-right: 0rem;
-    }
   }
   
   .app__header-badge {
@@ -57,6 +54,7 @@
     flex-direction: column;
   
     .badge-cmp, .tag-cmp {
+      display: flex;
       padding: 1rem 2rem;
       border: var(--white-color);
       border-radius: 15px;
@@ -68,7 +66,7 @@
   
     .tag-cmp {
       flex-direction: column;
-      margin-top: 3rem;
+      margin-top: 1rem;
   
       p {
         width: 100%;
@@ -121,13 +119,19 @@
   
     div:nth-child(2) {
       margin: 1.75rem;
-      width: 150px;
-      height: 150px;
+      width: 130px;
+      height: 130px;
     }
   
     div:nth-child(3) {
       width: 100px;
       height: 100px;
+    }
+
+    div:nth-child(4) {
+      margin-left: 4rem;
+      width: 85px;
+      height: 85px;
     }
   
     @media screen and (min-width: 2000px) {
@@ -144,6 +148,11 @@
       div:nth-child(3) {
         width: 200px;
         height: 200px;
+      }
+
+      div:nth-child(4) {
+        width: 240px;
+        height: 240px;
       }
     }
   

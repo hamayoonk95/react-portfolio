@@ -10,7 +10,7 @@ const SocialMedia = () => {
             <BsTwitter />
         </div>
         <div>
-            <BsInstagram />
+            <BsInstagram onClick={() => window.open('https://instagram.com/')} />
         </div>
         <div>
             <FaFacebookF />

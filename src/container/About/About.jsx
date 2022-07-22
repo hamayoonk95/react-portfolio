@@ -11,7 +11,7 @@ const About = () => {
   const [abouts, setAbouts] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "abouts"]';
+    const query = '*[_type == "education"]';
 
     client.fetch(query)
       .then((data) => setAbouts(data))
@@ -21,7 +21,7 @@ const About = () => {
   return (
     <div>
       <h2 className="head-text">
-        I know that <span>Good Design</span> means <span> Good Business </span>
+        Education
       </h2>
 
       <div className="app__profiles">

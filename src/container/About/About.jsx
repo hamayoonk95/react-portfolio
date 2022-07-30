@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { AppWrap } from "../../wrapper"
+import { images } from "../../constants"
 
 import "./About.scss";
-import { urlFor, client } from "../../client";
 
 
 const About = () => {
 
-  const [abouts, setAbouts] = useState([]);
+const abouts = [
+  {title: "Goldsmiths University", description: "BSc Computer Science", imgUrl: images.goldsmiths_uni, year:"2021-present"},
+  {title: "Coventry College", description: "Access to Higher Education: Computing", imgUrl: images.cov_college, year:"2020-2021"},
+  {title: "Udemy", description: "Web Development Bootcamp", imgUrl: images.udemy, year:"2022"},
+];
 
-  useEffect(() => {
-    const query = '*[_type == "education"]';
-
-    client.fetch(query)
-      .then((data) => setAbouts(data))
-  }, []);
-  
+const works = [
+  {title: "Creative Alliance", description: "Website Testing", imgUrl: images.CA_logo, year:"Summer 2022"}
+];
 
   return (
     <div>
@@ -33,12 +33,42 @@ const About = () => {
             transition={{ duration: 0.5, type: "tween" }}
             className="app__profile-item"
           >
-            <img src={urlFor(about.imgUrl)} alt={about.title} />
+            <img src={about.imgUrl} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
             <p className="p-text" style={{ marginTop: 10 }}>
               {about.description}
+            </p>
+            <p className="p-text">
+              {about.year}
+            </p>
+          </motion.div>
+        ))}
+      </div>
+
+      <h2 className="head-text">
+        Experience
+      </h2>
+
+      <div className="app__profiles">
+        {works.map((work, index) => (
+          <motion.div
+            key={work.title + index}
+            whileInView={{ opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.5, type: "tween" }}
+            className="app__profile-item"
+          >
+            <img src={work.imgUrl} alt={work.title} />
+            <h2 className="bold-text" style={{ marginTop: 20 }}>
+              {work.title}
+            </h2>
+            <p className="p-text" style={{ marginTop: 10 }}>
+              {work.description}
+            </p>
+            <p className="p-text">
+              {work.year}
             </p>
           </motion.div>
         ))}

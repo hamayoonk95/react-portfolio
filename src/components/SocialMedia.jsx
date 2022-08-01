@@ -1,6 +1,7 @@
 import React from 'react';
-import { BsTwitter, BsInstagram } from 'react-icons/bs';
+import { BsTwitter} from 'react-icons/bs';
 import { FaFacebookF} from 'react-icons/fa';
+import { SiLinkedin } from "react-icons/si"
 
 
 const SocialMedia = () => {
@@ -10,10 +11,10 @@ const SocialMedia = () => {
             <BsTwitter />
         </div>
         <div>
-            <BsInstagram onClick={() => window.open('https://instagram.com/')} />
+            <FaFacebookF />
         </div>
         <div>
-            <FaFacebookF />
+            <SiLinkedin onClick={() => window.open('https://www.linkedin.com/in/hamayoon-khan-17166a184/')}/>
         </div>
     </div>
   )

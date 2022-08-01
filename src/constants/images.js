@@ -10,6 +10,10 @@ import cov_college from "../assets/cov-college.jpg";
 import goldsmiths_uni from "../assets/goldsmiths.webp";
 import udemy from "../assets/udemy.png";
 import CA_logo from "../assets/ca.jpg";
+import sassIcon from "../assets/sass.png"
+import htmlIcon from "../assets/html.png"
+import cssIcon from "../assets/css.png"
+import jsIcon from "../assets/javascript.png"
 
 export default {
   logo,
@@ -23,5 +27,9 @@ export default {
   cov_college,
   goldsmiths_uni,
   udemy,
-  CA_logo
+  CA_logo,
+  sassIcon,
+  htmlIcon,
+  cssIcon,
+  jsIcon
 };

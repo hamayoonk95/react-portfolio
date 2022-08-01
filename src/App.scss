@@ -17,6 +17,11 @@
 
   display: flex;
   flex-direction: row;
+
+  &:nth-child(odd) {
+    background-color: #fff;
+
+  }
 }
 
 .app__flex {
@@ -128,6 +133,7 @@
     &:hover {
       background-color: var(--secondary-color);
       border-color: var(--secondary-color);
+      cursor: pointer;
 
       svg {
         color: var(--white-color);

@@ -14,10 +14,6 @@ const abouts = [
   {title: "Udemy", description: "Web Development Bootcamp", imgUrl: images.udemy, year:"2022"},
 ];
 
-const works = [
-  {title: "Creative Alliance", description: "Website Testing", imgUrl: images.CA_logo, year:"Summer 2022"}
-];
-
   return (
     <div>
       <h2 className="head-text">
@@ -42,33 +38,6 @@ const works = [
             </p>
             <p className="p-text">
               {about.year}
-            </p>
-          </motion.div>
-        ))}
-      </div>
-
-      <h2 className="head-text">
-        Experience
-      </h2>
-
-      <div className="app__profiles">
-        {works.map((work, index) => (
-          <motion.div
-            key={work.title + index}
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: "tween" }}
-            className="app__profile-item"
-          >
-            <img src={work.imgUrl} alt={work.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
-              {work.title}
-            </h2>
-            <p className="p-text" style={{ marginTop: 10 }}>
-              {work.description}
-            </p>
-            <p className="p-text">
-              {work.year}
             </p>
           </motion.div>
         ))}

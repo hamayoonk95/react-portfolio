@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { FaFacebookF} from 'react-icons/fa';
+import { SiLinkedin } from "react-icons/si";
 
 import { images } from '../../constants';
 import { AppWrap } from '../../wrapper';
@@ -44,6 +47,18 @@ const Footer = () => {
           <a href="mailto:hamayoonk38@gmail.com" className="p-text">Hamayoonk38@gmail.com</a>
         </div>
       </div>
+      <div className='app__socials'>
+        <div>
+            <FaGithub onClick={() => window.open("https://github.com/hamayoonk95")} />
+        </div>
+        <div>
+            <FaFacebookF  onClick={() => window.open("https://www.facebook.com/profile.php?id=100071468872956")} />
+        </div>
+        <div>
+            <SiLinkedin onClick={() => window.open("https://www.linkedin.com/in/hamayoon-khan-17166a184/")}/>
+        </div>
+    </div>
+      
 
     {!isFormSubmitted ?
       <div className="app__footer-form app__flex">

@@ -1,5 +1,6 @@
 import logo from '../assets/logo.png';
 import profile from '../assets/profile.png';
+import profile1 from '../assets/profile1.png';
 import circle from '../assets/circle.svg';
 import bootstrap_icon from '../assets/bootstrap.png';
 import JS from '../assets/JS.png';
@@ -40,6 +41,7 @@ const images = {
   gameImg,
   cellsImg,
   email,
+  profile1
 };
 
 export default images;

@@ -48,7 +48,7 @@ const Header = () => {
       >
         <img
           className="profile-img"
-          src={images.profile}
+          src={images.profile1}
           alt="Background profile"
         />
         <motion.img

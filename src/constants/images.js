@@ -1,17 +1,26 @@
-import logo from "../assets/logo.png";
-import profile from "../assets/profile.png";
-import circle from "../assets/circle.svg";
-import bootstrap_icon from "../assets/bootstrap.png";
-import JS from "../assets/JS.png";
-import github_icon from "../assets/github.png";
-import react_icon from "../assets/react.png";
-import bgImg from "../assets/bgIMG.png";
-import about_1 from "../assets/about01.png";
-import about_2 from "../assets/about02.png";
-import about_3 from "../assets/about03.png";
-import about_4 from "../assets/about04.png";
+import logo from '../assets/logo.png';
+import profile from '../assets/profile.png';
+import profile1 from '../assets/profile1.png';
+import circle from '../assets/circle.svg';
+import bootstrap_icon from '../assets/bootstrap.png';
+import JS from '../assets/JS.png';
+import github_icon from '../assets/github.png';
+import react_icon from '../assets/react.png';
+import bgImg from '../assets/bgIMG.png';
+import cov_college from '../assets/cov-college.jpg';
+import goldsmiths_uni from '../assets/goldsmiths.webp';
+import udemy from '../assets/udemy.png';
+import CA_logo from '../assets/ca.jpg';
+import sassIcon from '../assets/sass.png';
+import htmlIcon from '../assets/html.png';
+import cssIcon from '../assets/css.png';
+import jsIcon from '../assets/javascript.png';
+import paintImg from '../assets/paint.png';
+import gameImg from '../assets/game.png';
+import cellsImg from '../assets/cells.png';
+import email from '../assets/email.png';
 
-export default {
+const images = {
   logo,
   profile,
   circle,
@@ -20,8 +29,19 @@ export default {
   github_icon,
   react_icon,
   bgImg,
-  about_1,
-  about_2,
-  about_3,
-  about_4,
+  cov_college,
+  goldsmiths_uni,
+  udemy,
+  CA_logo,
+  sassIcon,
+  htmlIcon,
+  cssIcon,
+  jsIcon,
+  paintImg,
+  gameImg,
+  cellsImg,
+  email,
+  profile1
 };
+
+export default images;

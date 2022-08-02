@@ -37,7 +37,7 @@
 .app__navbar-links {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
     li {
@@ -66,6 +66,7 @@
 
             &:hover {
                 color: var(--secondary-color);
+                transform: scale(1.2);
             }
         }
 

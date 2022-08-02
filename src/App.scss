@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: row;
 
-  &:nth-child(odd) {
+  &:nth-child(even) {
     background-color: #fff;
 
   }

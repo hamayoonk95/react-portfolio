@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsTwitter} from 'react-icons/bs';
+import { FaGithub } from 'react-icons/fa';
 import { FaFacebookF} from 'react-icons/fa';
 import { SiLinkedin } from "react-icons/si"
 
@@ -8,13 +8,13 @@ const SocialMedia = () => {
   return (
     <div className='app__social'>
         <div>
-            <BsTwitter />
+            <FaGithub onClick={() => window.open("https://github.com/hamayoonk95")} />
         </div>
         <div>
-            <FaFacebookF />
+            <FaFacebookF  onClick={() => window.open("https://www.facebook.com/profile.php?id=100071468872956")} />
         </div>
         <div>
-            <SiLinkedin onClick={() => window.open('https://www.linkedin.com/in/hamayoon-khan-17166a184/')}/>
+            <SiLinkedin onClick={() => window.open("https://www.linkedin.com/in/hamayoon-khan-17166a184/")}/>
         </div>
     </div>
   )

@@ -126,6 +126,7 @@
         background-size: cover;
 
         box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+        animation: slideIn 0.5s ease-out;
 
         //close button icon
         svg {
@@ -178,5 +179,17 @@
     //remove the icons on smaller devices
     @media screen and (min-width: 900px) {
         display: none;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0%);
     }
 }
